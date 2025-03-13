@@ -21,8 +21,8 @@ const Login = () => {
       if (response.ok) {
         // Handle successful login (e.g., store token, redirect)
         console.log(data.message);
-        setAlert('Login successful! Redirecting...');
-        setTimeout(() => navigate('/'), 2000);
+        setAlert('Login successful! Redirecting to dashboard...');
+        setTimeout(() => navigate('/dashboard'), 2000);
       } else {
         setAlert(data.message);
       }
